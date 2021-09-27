@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root{
+  
+  /* background-color:grey; */
+  min-height:100vh;
+  max-height: fit-content;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  width: 80%;
+  min-height:50vh;
+  /* background-color:orange; */
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.App h1{
+  font-family: 'PT Serif', serif;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+.App h2{
+  font-family: 'PT Serif', serif;
+  margin: 20px;
+}
+
+.imageDiv{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+ 
+  min-height:35vh;
+  align-items:center
+}
+
+.questionCard{
+  width: 80%;
+  min-height:50vh;
+  /* background-color:orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding:20px;
+}
+
+.buttonDiv{
+  display: flex;
+  flex-direction: column;
+  min-height:30vh;
+  min-width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonDiv button , button{
+  display: block;
+  padding:10px 70px;
+  margin:5px;
+  background-color: aquamarine;
+  color: black;
+  width:80%
+}
+
+.buttonDiv button[disabled] {
+  background-color:burlywood
+}
+
+button{
+  background-color:black;
+  color:white;
+  width:60% !important;
+}
+
+.loading{
+  width: 80%;
+  min-height:50vh;
+  /* background-color:orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+img:hover{ 
+  cursor: pointer;
+  transform: scale(0.9);
+}
+@media only screen and (max-width: 600px){
+  button{
+    width: 100% !important;
   }
 }
